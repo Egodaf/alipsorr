@@ -1,26 +1,42 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg, IonThumbnail } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
-const Tab1: React.FC = () => {
+type Props = {
+  image: string;
+  title: string;
+  header: string;
+  titlePage: string;
+  descriptionArr: string[];
+}
+
+const Tab: React.FC<Props> = ({image, title, header, titlePage, descriptionArr}) => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>{titlePage}</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonTitle size="large">{header}</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <div style={{padding: '0 10px'}}>
+          <ExploreContainer
+            name={title}
+          />
+          <img src={image} />
+          <ExploreContainer
+            descriptionArr={descriptionArr}
+          />
+        </div>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Tab;

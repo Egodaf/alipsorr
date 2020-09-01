@@ -2,14 +2,19 @@ import React from 'react';
 import './ExploreContainer.css';
 
 interface ContainerProps {
-  name: string;
+  name?: string;
+  descriptionArr?: string[];
 }
 
-const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
+const ExploreContainer: React.FC<ContainerProps> = ({ name, descriptionArr }) => {
   return (
     <div className="container">
-      <strong>{name}</strong>
-      <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      {Boolean(name) && <strong>{name}</strong>}
+      {Boolean(descriptionArr) && (
+        (descriptionArr as string[]).map(el => (
+          <div key={el} className="container__text">{el}</div>
+        )
+      ))}
     </div>
   );
 };
