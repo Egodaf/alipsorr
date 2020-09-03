@@ -34,6 +34,8 @@ import './theme/variables.css';
 
 import {routes} from './data'
 
+// TODO: add real data
+
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
@@ -48,7 +50,6 @@ const App: React.FC = () => (
                   image={route.image}
                   title={route.title}
                   header={String(route.label)}
-                  titlePage={route.titlePage}
                   descriptionArr={route.descriptionArr}
                 />
               )}
@@ -60,7 +61,7 @@ const App: React.FC = () => (
         <IonTabBar slot="bottom">
           {routes.map(el => (
             <IonTabButton tab={el.tab} href={el.href} key={el.key}>
-              <IonIcon icon={triangle} />
+              <IonIcon icon={el.icon} />
               <IonLabel>{el.label}</IonLabel>
             </IonTabButton>
           ))}

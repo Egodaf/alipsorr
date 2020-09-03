@@ -7,18 +7,12 @@ type Props = {
   image: string;
   title: string;
   header: string;
-  titlePage: string;
-  descriptionArr: string[];
+  descriptionArr: {title?: string; texts: string[]}[];
 }
 
-const Tab: React.FC<Props> = ({image, title, header, titlePage, descriptionArr}) => {
+const Tab: React.FC<Props> = ({image, title, header, descriptionArr}) => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>{titlePage}</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
