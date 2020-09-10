@@ -1,9 +1,10 @@
 import image1 from './images/game_1.png'
-import image2 from './images/game_2.png'
-import image3 from './images/game_3.png'
+import image2 from './images/game_2.jpg'
+import image3 from './images/game_3.jpg'
 import image4 from './images/game_4.png'
 import image5 from './images/game_5.png'
-import { ellipse, square, triangle, airplane, boat } from 'ionicons/icons';
+import image6 from './images/game_6.jpg'
+import { ellipse, book, albumsOutline, airplane, car } from 'ionicons/icons';
 
 export const routes = [
     {
@@ -12,55 +13,34 @@ export const routes = [
         href: '/tab1',
         tab: 'tab1',
         image: image1,
-        title: 'What Is a Rocket?',
+        title: '',
         descriptionArr: [
           {
-            title: '',
+            title: 'Brand Philosophy',
             texts: [
-              'The word "rocket" can mean different things. Most people think of a tall, thin, round vehicle. They think of a rocket that launches into space. "Rocket" can mean a type of engine. The word also can mean a vehicle that uses that engine.',
+              'Brand Philosophy',
+              'ALPINA creates exclusive automobiles for a small circle of connoisseurs who appreciate the extraordinary and who know how to enjoy pleasure - cars for automotive gourmets.',
+              'These vehicles are likely the most renowned individual automobiles based on BMW cars, and have been developed and produced at the small autonomous family business, in friendly cooperation with BMW, for 50 years now. The love for details is always eminent in this process. Today, company founder Burkard Bovensiepen heads the company together with his sons Andreas and Florian.',
+              'The close cooperation with BMW is the basis for ALPINA’s continued success: it’s what empowers the creation of products that are highly individual while at the same time meeting the stringent quality and safety standards that apply to large-scale production cars.',
+              'Tradition and authenticity are important values of the brand.',
             ],
           },
           {
-            title: 'How Does a Rocket Engine Work?',
+            title: 'Oscar Wilde',
             texts: [
-              'Like most engines, rockets burn fuel. Most rocket engines turn the fuel into hot gas. The engine pushes the gas out its back. The gas makes the rocket move forward.',
-              'A rocket is different from a jet engine. A jet engine needs air to work. A rocket engine doesn\'t need air. It carries with it everything it needs. A rocket engine works in space, where there is no air.',
-              'There are two main types of rocket engines. Some rockets use liquid fuel. The main engines on the space shuttle orbiter use liquid fuel. The Russian Soyuz uses liquid fuels. Other rockets use solid fuels. On the side of the space shuttle are two white solid rocket boosters. They use solid fuels. Fireworks and model rockets also fly using solid fuels.',
+              '“I’m a man of simple tastes. I’m always satisfied with the best.”',
+              'Inspired by this quote from Oscar Wilde, powered by the will to turn something good into something individual and driven by a great passion for automobiles, I started out at my father’s former typewriter factory to develop a power enhancing multi-carburettor unit for the BMW 1500, and I called it the “ALPINA unit”.',
+              'What was eyed by my father rather with mistrust in the day, turned out to become - thanks to the trust put into me by BMW back then - the starting point of a success story, one which I had surely dreamed of, but which I had no way of foreseeing to come true.',
+              'A lot has changed since then. The original backyard workshop in Kaufbeuren has evolved into a modern family business over the past fifty years, which lives up to the exclusive demands of its customers worldwide with a current production output of 1,700 automobiles per year.',
+              'My sons and I owe this success to numerous companions: foremost, to Bayerische Motoren Werke, who not only kept opening niches to us throughout all these years, but who provided comprehensive support in many ways to us fill those niches; to our suppliers and business partners, some of whom we have been cooperating with for decades in a highly constructive manner; to our dealers and importers who so successfully have represented us for many years in Europe, Asia and the USA; to our customers, some of whom are already the generation driving our cars on the roads of the world; to the city of Buchloe, which provides caring support and a home to our company since 1970; and last but not least, to our employees, who have adopted this philosophy with their hearts and minds, and who – each in their own field of expertise – contribute with their loyalty, passion and enthusiasm to our customers feeling in good hands with ALPINA, both with their existing fleet and when purchasing new automobiles.',
+              'As you see, even in the face of change, ALPINA also stands for continuity: the motto, the will and the passion have remained the same they were in the beginning. We strive to produce exclusive masterpieces for automotive connoisseurs with all our motivation, drive and passion.',
+            ],
+          },
 
-            ],
-          },
-          {
-            title: 'Why Does a Rocket Work?',
-            texts: [
-              'In space, an engine has nothing to push against. So how do rockets move there? Rockets work by a scientific rule called Newton\'s third law of motion. English scientist Sir Isaac Newton listed three Laws of Motion. He did this more than 300 years ago. His third law says that for every action, there is an equal and opposite reaction. The rocket pushes on its exhaust. The exhaust pushes the rocket, too. The rocket pushes the exhaust backward. The exhaust makes the rocket move forward.',
-              'This rule can be seen on Earth. Imagine a person standing on a skateboard. Imagine that person throwing a bowling ball. The ball will go forward. The person on the skateboard will move, too. The person will move backward. Because the person is heavier, the bowling ball will move farther.',
-
-            ],
-          },
-          {
-            title: 'When Were Rockets Invented?',
-            texts: [
-              'The first rockets we know about were used in China in the 1200s. These solid rockets were used for fireworks. Armies also used them in wars. In the next 700 years, people made bigger and better solid rockets. Many of these were used for wars too. In 1969, the United States launched the first men to land on the moon using a Saturn V rocket.',
-
-            ],
-          },
-          {
-            title: 'How Does NASA Use Rockets?',
-            texts: [
-              'Early NASA missions used rockets built by the military. Alan Shepard was the first American in space. He flew on the U.S. Army\'s Redstone rocket. John Glenn was the first American in orbit. He flew on an Atlas rocket. NASA\'s Gemini missions used the Titan II rocket. The first rockets NASA built to launch astronauts were the Saturn I, the Saturn IB and the Saturn V. These rockets were used for the Apollo missions. The Apollo missions sent men to the moon. A Saturn V also launched the Skylab space station. The space shuttle uses rocket engines.',
-              'NASA uses rockets to launch satellites. It also uses rockets to send probes to other worlds. These rockets include the Atlas V, the Delta II, the Pegasus and Taurus. NASA uses smaller "sounding rockets" for scientific research. These rockets go up and come back down. They do not fly into orbit',
-            ],
-          },
-          {
-            title: 'How Will NASA Use Rockets in the Future?',
-            texts: [
-              'New rockets are being developed today. They will launch astronauts on future missions.',
-              'The new rockets will not look like the space shuttle. These rockets will look more like earlier ones. They will be tall and round and thin. These rockets will take astronauts into space. They will take supplies to the International Space Station. NASA also is working on a powerful new rocket called a heavy lift vehicle. This rocket will be able to take big loads into space.',
-              'Together, these new rockets will make it possible to explore other worlds. Someday they may send humans to Mars.',
-            ],
-          },
+          
+          
         ],
-        icon: square,
+        icon: book,
       },
     {
         label: 2,
@@ -68,70 +48,156 @@ export const routes = [
         href: '/tab2',
         tab: 'tab2',
         image: image2,
-        title: 'Rockets and rocket launches, explained',
+        title: 'History - Stages of Alpina Development',
         descriptionArr: [
           {
-            title: '',
+            title: '1961 How it all began',
             texts: [
-              'Since the invention of gunpowder in China more than seven centuries ago, humans have sent cylinders soaring into the skies with the help of controlled explosions. These craft and their engines, called rockets, have taken on many roles as fireworks, signal flares, and weapons of war.',
-              'But since the 1950s, rockets also have let us send robots, animals, and people into orbit around Earth—and even beyond.',
+              'Burkard Bovensiepen begins his career in the automotive industry with the creation of a Weber twin carburetor for the BMW 1500.',
             ],
           },
           {
-            title: 'How do rockets work?',
+            title: '1964 Double Weber carburetor',
             texts: [
-              'As tempting as the logic may be, rockets don\'t work by “pushing against the air,” since they also function in the vacuum of space. Instead, rockets take advantage of momentum, or how much power a moving object has.',
-              'If no outside forces act on a group of objects, the group\'s combined momentum must stay constant over time. Imagine yourself standing on a skateboard with a basketball in your hands. If you throw the basketball in one direction, you and the skateboard will roll in the opposite direction to conserve momentum. The faster you throw the ball, the faster you roll backward.',
-              'Rockets work by expelling hot exhaust that acts in the same way as the basketball. The exhaust\'s gas molecules don\'t weigh much individually, but they exit the rocket\'s nozzle very fast, giving them a lot of momentum. As a result, the rocket moves in the opposite direction of the exhaust with the same total oomph.',
-              'Rockets make exhaust by burning fuel in a rocket engine. Unlike airplanes\' jet engines, rockets are designed to work in space: They don\'t have intakes for air, and they bring along their own oxidizers, substances that play the role of oxygen in burning fuel. A rocket\'s fuel and oxidizer—called propellants—can be either solid or liquid. The space shuttle\'s side boosters used solid propellants, while many modern rockets use liquid propellants',
+              'ALPINA engines with double carburettor, assembled by a young student of economics and mechanical engineering in his fathers factory, are widely recognized in the specialized press. And also the high quality of ALPINA products is recognized by Paul Hahnemann, the legendary head of BMW sales.',
+               
             ],
           },
           {
-            title: 'What are the stages of a rocket launch?',
+            title: '1965 Foundation of the company',
             texts: [
-              'Today\s large, space-bound rockets consist of at least two stages, sections stacked in a shared cylindrical shell. Each stage has its own engines, which can vary in number. The first stage of SpaceX\'s Falcon 9 rocket has nine engines, while the first stage of Northrop Grumman\'s Antares rocket has two.',
-              'A rocket\'s first stage gets the rocket out of the lower atmosphere, sometimes with the help of extra side boosters. Because the first stage must lift the entire rocket, its cargo (or payload), and any unused fuel, it\'s the biggest and most powerful section.',
-              'The faster a rocket goes, the more air resistance it encounters. But the higher the rocket goes, the thinner the atmosphere gets. Combined, these two factors mean that the stress on a rocket rises and then falls during a launch, peaking at a pressure known as max q. For the SpaceX Falcon 9 and the United Launch Alliance Atlas V, max q occurs at 80 to 90 seconds after liftoff, at altitudes between seven and nine miles.',
-              'Once the first stage has done its job, the rocket drops that portion and ignites its second stage. The second stage has a lot less to transport, and it doesn\'t have to fight through the thick lower atmosphere, so it usually has just one engine. At this point, rockets also let go of their fairings, the pointed cap at the rocket\'s tip that shields what the rocket is carrying—its payload—during the launch\'s first phase.',
-              'Historically, most of a rocket\'s discarded parts were left to fall back down to Earth and burn up in the atmosphere. But starting in the 1980s with NASA\'s space shuttle, engineers designed rocket parts that could be recovered and reused. Private companies including SpaceX and Blue Origin are even building rockets with first stages that return to Earth and land themselves. The more that a rocket\'s parts can be reused, the cheaper rocket launches can get.',
+              'ALPINA Burkard Bovensiepen KG was founded in Kaufbeuren on 1st January 1965. The company employs 8 people.',
+              
             ],
           },
           {
-            title: 'What are the different types of rockets?',
+            title: '1967 ALPINA brand name',
             texts: [
-              "Just as automobiles come in many shapes and sizes, rockets vary depending on the jobs they do.",
-              "Sounding rockets launch high in the air on ballistic arcs, curving into space for five to 20 minutes before they crash back to Earth. They're most often used for scientific experiments that don't need a lot of time in space. For instance, NASA used a sounding rocket in September 2018 to test parachutes for future Mars missions. (Where exactly is the edge of the space?The answer is surprisingly complex.)",
-              "Suborbital rockets such as Blue Origin's New Shepard are strong enough to temporarily enter space, either for scientific experiments or space tourism. Orbital-class rockets are powerful enough to launch objects into orbit around Earth. Depending on how big the payload is, they also can send objects beyond Earth, such as scientific probes (or sports cars).",
-              "Ferrying satellites to orbit or beyond requires serious power. For a satellite to remain in a circular orbit 500 miles above Earth's surface, it must be accelerated to more than 16,600 miles an hour. The Saturn V rocket, the most powerful ever built, lifted more than 300,000 pounds of payload into low-Earth orbit during the Apollo missions.",
-              "For now, SpaceX's Falcon Heavy and United Launch Alliance's Delta IV Heavy are the world's most powerful rockets, but even bigger ones are coming. Once NASA's Space Launch System gets past its delays and cost overruns, it will be the most powerful rocket ever built. Meanwhile, SpaceX is building a test version of its Starship, the massive rocket formerly known as the BFR (Big Falcon Rocket). Russia has also announced its goal of launching a “super-heavy lift” rocket in 2028.",
-              "As some rocket makers go big, others are going small to service the growing boom in cheap-to-build satellites no bigger than refrigerators. Rocket Labs's Electron rocket can lift just a few hundred pounds into low-Earth orbit, but for the small satellites it's ferrying, that's all the power it needs.",
+              'The developed logo becomes not only a brand name, but also a quality mark. It makes ALPINA company easily recognizable.',
+              
             ],
           },
           {
-            title: 'What is a launch pad?',
-            texts: [
-              "A launch pad is a platform from which a rocket is launched, and they're found at facilities called launch complexes or spaceports. (Explore a map of the world's active spaceports.)",
-              "A typical launch pad consists of a pad and a launch mount, a metal structure that supports the upright rocket before it launches. Umbilical cables from the launch mount provide the rocket with power, cooling liquids, and top-up propellant before launch. The structure also helps shield the rocket from lightning strikes.",
-              "Different launch complexes have different ways of putting rockets on launch pads. At NASA's Kennedy Space Center, the space shuttle was assembled vertically and moved to the launch pad on a tank-like vehicle called a crawler. The Russian space program transports its rockets horizontally by train to the launch pad, where they're then lifted upright.",
-              "Launch pads also have features that minimize damage from the rocket's launch. When a rocket first ignites, valves lining the launch pad spray hundreds of thousands of gallons of water into the air around the exhaust, which helps lessen the rocket's deafening roar. Trenches beneath the launch pad also direct the rocket's exhaust out and away from the craft, so the flames can't rise back up and engulf the rocket itself.",
+            title: '1968 Participation in the Touring Car Championship',
+            texts: [              
+              'ALPINA takes part in the Touring Car Championship for the first time. This event started a unique success story. Drivers Derek Bell, Harald Ertl, James Hunt, Jackie X, Niki Lauda, ​​Brian Muir and Hans Stuck performed from 1969 to 1973. for the ALPINA team.',
             ],
           },
           {
-            title: 'Where are rockets launched?',
+            title: '1970 ALPINA Wins',
             texts: [
-              "There are many launch sites around the world, each with different pros and cons. In general, the closer a launch site is to the Equator, the more efficient it is. That's because the Equator moves faster than Earth's poles as the planet rotates, like the outer edge of a spinning record. Launch sites at higher latitudes more easily place satellites into orbits that pass over the poles.",
-              "Between 1957 and 2017, 29 spaceports sent satellites or humans into orbit. Many of the sites are still active, including the only three facilities ever to launch humans into orbit. More spaceports are on the way, both public and private. In 2018, the U.S.-New Zealand firm Rocket Labs launched satellites into orbit from its own private launchpad on New Zealand's Mahia Peninsula.",
+              'Team ALPINA wins the European Touring Car Championship and the Spa-Francorchamps 24 Hours, as well as various German circuit, mountain and rally championships.',
             ],
           },
           {
-            title: 'Where can I see a rocket launch?',
+            title: '1971 Lightweight coupe',
             texts: [
-              "In the United States, NASA's Kennedy Space Center regularly offers access to visitors. NASA's Wallops Flight Facility in Virginia also allows launch viewing from its visitor center. The European Space Agency's spaceport in French Guiana is open to visitors, but the agency encourages travelers to plan ahead. Tourists can visit Kazakhstan's Baikonur Cosmodrome, the storied home of the Soviet and Russian space programs, but only by booking a tour. The facility remains closely guarded. (See pictures of the villages near Russia's Plesetsk Cosmodrome, where salvaging discarded rockets is a way of life.)",
-              "If you can't visit a spaceport in person, never fear: Many public space agencies and private companies offer online livestreams of their launches.",
+              'ALPINA convinces BMW of the need for a lightweight version of the BMW 3.0 CS in order to remain successful in motorsport. The project for the creation of a new version of the lightweight 3.0 CSL coupe is commissioned by BMW to ALPINA. ALPINAs classic 20-spoke ALPINA rims are the external hallmark of ALPINAs involvement in the project of this official BMW sports car.              ',
+            ],
+          },
+          {
+            title: '1973 Success in racing',
+            texts: [
+              'Derek Bell, Harald Ertl, Niki Lauda and Brian Muir win the European Touring Car Championship for ALPINA and BMW. Niki Lauda in a lightweight coupe sets an absolute record in a 6-hour race at the Nürburgring',
+            ],
+          },{
+            title: '1973 Oil Crisis',
+            texts: [
+              'The energy crisis is shaking the auto industry. ALPINA gets through this difficult time without layoffs. This became possible not only thanks to its good reputation, but also due to the flexible response to market demands and the extraordinary dedication of the staff to the company. ALPINA develops gasoline engines that are economical and powerful',
+            ],
+          },{
+            title: '1975 Sales start in Switzerland and England',
+            texts: [
+              'In cooperation with selected BMW dealers, the construction of ALPINAs own dealer network in Germany begins. Representative offices in Switzerland and Great Britain are opened at the same time',
+            ],
+          },{
+            title: '1977 End of the first stage of participation in motorsport',
+            texts: [
+              'Dieter Kvester in the BMW ALPINA 3.5 CSL becomes the European Touring Car Champion, leaving behind the Jaguar team, which was promised an easy victory. At the end of this successful season, ALPINA retired from motorsport for ten years to devote itself to creating great road cars',
+            ],
+          },{
+            title: '1978 Electronic ignition',
+            texts: [
+              'Presentation of a new generation of cars completely designed by ALPINA. ALPINA B6 2.8 is the BMW 3 Series with a 6-cylinder engine, while the base model from BMW is offered exclusively with a 4-cylinder unit. A similar engine size on such a sleek car meant completely new sensations of “high-speed comfort”. The BMW ALPINA B7 Turbo based on the BMW 5 Series becomes the fastest sedan in the world! ALPINA B7 Turbo Coupe with its 300 hp takes its rightful place among the most powerful sports coupes. All engines of the new generation ALPINA are equipped for the first time with a fully electronic ignition system as standard - an absolute innovation in the automotive industry',
+            ],
+          },{
+            title: '1979 Distribution and collection of exclusive wines',
+            texts: [
+              'Burkard Bovensiepen founds a new business line - the distribution of exclusive wines. In a very short time, not only many wine connoisseurs become customers, but virtually the entire luxury restaurant industry in Germany. ALPINA office opens in Japan - the beginning of successful cooperation. In 2001, ALPINA delivered the 2000th car to Japan',
+            ],
+          },{
+            title: '1981 Shell Economy Marathon',
+            texts: [
+              'Auto Motor und Sport and Shell are running a competition for the most fuel efficient car. BMW 318i ALPINA wins its class with 2.672 liters per 100 km',
+            ],
+          },{
+            title: '1987 Participation in M3 motorsport',
+            texts: [
+              'ALPINA returns to motorsport and takes part in the German Open Touring Car Championship. Burkard Bovensiepen took an active part in drawing up the competition regulations. Hélène Laure, Andy Bovensiepen, Fabien Giraud, Peter Oberndorfer and Christian Danner not only rank high, but also celebrate numerous victories in the BMW ALPINA M3 Group A. In environmental matters, ALPINA also achieves phenomenal results - a metal catalyst, first installed on BMW ALPINA M3 Gruppe A, later becomes an integral part of the cars participating in the German Touring Car Championship',
+            ],
+          },{
+            title: '1988 End of the second stage of participation in auto racing',
+            texts: [
+              'Due to limited production capacity, ALPINA decides to focus on the design and production of BMW ALPINA road vehicles. ALPINA retires from motorsport at the end of the year',
+            ],
+          },{
+            title: '1989 B10 Bi-Turbo',
+            texts: [
+              'The presentation of the new BMW ALPINA B10 Bi-Turbo is of great public interest. On the pages of Road & Track magazine, renowned journalist and race car driver Paul Frere says of this car: “For me, its a car. ... ... I think this is the best sedan in the world “',
+            ],
+          },{
+            title: '1990 Increase in the staff to 120 people',
+            texts: [
+              'ALPINA is expanding. The companys staff increases to 120 people. A new administrative and production complex is being built',
+            ],
+          },{
+            title: '1992 SHIFT-TRONIC',
+            texts: [
+              'ALPINA becomes the first automaker to introduce electronic clutch control in the BMW ALPINA B12 5,7 Coupe. ALPINA technology is called SHIFT-TRONIC. Giving up the clutch pedal is very easy given the completely new dynamics when driving with a 6-speed gearbox.',
+            ],
+          },{
+            title: '1993 SWITCH-TRONIC',
+            texts: [
+              ' ALPINAs SWITCH-TRONIC technology opens up new perspectives for sporty driving in vehicles with automatic gearboxes. The drivers self-shifting capability convinces many manual transmission enthusiasts of the benefits of modern automatic shifting technology. A special feature of SWITCH-TRONIC technology is the ability to shift gears using buttons integrated on the back of the steering wheel. Technology makes you feel like a Formula 1 driver',
+            ],
+          },{
+            title: '1995 SUPERKAT',
+            texts: [
+              'ALPINA becomes the first automotive manufacturer in the world to use SUPERKAT technology, an electrically heated metal catalyst, as standard for the BMW ALPINA B12 5.7 E-KAT. This development is the result of collaboration between ALPINA, BMW and EMITEC. Thanks to this completely new exhaust gas treatment technology, HC + NOx and CO emissions standards in force since 1996 have been exceeded by more than 80%',
+            ],
+          },{
+            title: '1999 D10 Bi-Turbo',
+            texts: [
+              'The beginning of a new era: ALPINA presents the ALPINA D10 BiTurbo at the Geneva Motor Show, the first diesel car in the companys 35-year history. ALPINA D10 BiTurbo is the most powerful diesel sedan in the world. Creation of a "super diesel" - a joint project of BMW and ALPINA',
+            ],
+          },{
+            title: '2002 Roadster V8',
+            texts: [
+              'For fans of luxurious and comfortable outdoor driving, ALPINA is developing its version of the roadster based on the BMW Z8 - the BMW ALPINA Roadster V8 with SWITCH-TRONIC technology. The total number is limited to 555 copies. ALPINA enters the American market for the first time with this exclusive model',
+            ],
+          },{
+            title: '2003 Radial compressor',
+            texts: [
+              'A new engine with a mechanically driven radial compressor is being developed for the BMW ALPINA B7. The premiere was the combination of supercharging concept and Valvetronic technology for the first time, which significantly reduced fuel consumption and CO2 emissions of this 500-horsepower car',
+            ],
+          },{
+            title: '2005 BMW ALPINA B5',
+            texts: [
+              'The 4.4 L supercharged V8 engine is now also available in the 5 Series. BMW ALPINA B5 is honored by many friends of the company as a worthy successor to the legendary B10 Bi-Turbo. Its phenomenal traction and dynamic characteristics put the BMW ALPINA B5 on a par with the most famous sports cars in the world.',
+            ],
+          },{
+            title: '2007 BMW ALPINA B3 Bi-Turbo',
+            texts: [
+              'By combining design and technology in a brilliant way in the B3 Bi-Turbo with a 3-liter 6-cylinder engine, ALPINA continues the successful history of the 3 Series. The legendary BMW ALPINA B6 2.8 in 1978 marked the beginning of a success story that continues to this day and has been embodied in 6,000 cars.',
+            ],
+          },{
+            title: '2008 Construction of a new engineering center',
+            texts: [
+              'To expand the technical know-how, ALPINA is building a state-of-the-art engineering center, thanks to which ALPINA will be able to accelerate the process of bringing its products to market and at the same time offer engineering services',
             ],
           },
         ],
-        icon: triangle,
+        icon: albumsOutline,
       },
     {
         label: 3,
@@ -139,10 +205,10 @@ export const routes = [
         href: '/tab3',
         tab: 'tab3',
         image: image3,
-        title: 'The History of Rockets',
+        title: 'Alpine models',
         descriptionArr: [
           {
-            title: '',
+            title: 'Alpina BMW B10 (E24) 3.5',
             texts: [
               "The principles of rocketry were first tested more than 2,000 years ago, but it's really only been in the past 70 years or so that these machines have been used for applications in space exploration. Today, rockets routinely take spacecraft to other planets in our solar system. Closer to Earth, rockets carrying supplies up to the International Space Station can return to Earth, land on their own and be used again.",
             ],
@@ -295,6 +361,6 @@ export const routes = [
             ],
           },
         ],
-        icon: boat,
+        icon: car,
       },
 ]
